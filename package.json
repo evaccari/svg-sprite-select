@@ -1,0 +1,45 @@
+{
+  "name": "@evaccari/svg-sprite-select",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.26.2",
+  "description": "CLI tool that helps to generate SVG sprites",
+  "exports": {
+    ".": {
+      "import": "./no-access.js"
+    }
+  },
+  "bin": {
+    "svg-sprite-select": "./bin/svg-sprite-select.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "svgs"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "lint": "eslint . --fix",
+    "lint:inspector": "eslint --inspect-config",
+    "prepack": "nr build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cli-progress": "3.12.0",
+    "commander": "14.0.2",
+    "fast-glob": "3.3.3",
+    "svg-sprite": "2.0.4",
+    "yoctocolors": "2.1.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "6.7.3",
+    "@antfu/ni": "28.0.0",
+    "@rslib/core": "0.18.6",
+    "@types/cli-progress": "3.11.6",
+    "@types/node": "24.1.0",
+    "@types/svg-sprite": "0.0.39",
+    "@types/vinyl": "2.0.12",
+    "eslint": "9.39.2",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "eslint.config.ts",
+    "rslib.config.ts"
+  ]
+}
